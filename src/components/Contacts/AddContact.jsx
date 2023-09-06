@@ -14,17 +14,7 @@ const AddContact = () => {
                 (
                     <>
                         <section className="p-3">
-                            <img
-                                src={require("../../assets/man-taking-note.png")}
-                                height="400px"
-                                style={{
-                                    position: "absolute",
-                                    zIndex: "-1",
-                                    top: "130px",
-                                    left: "100px",
-                                    opacity: "50%",
-                                }}
-                            />
+
                             <div className="container">
                                 <div className="row">
                                     <div className="col">
@@ -34,11 +24,12 @@ const AddContact = () => {
                                         >
                                             ساخت مخاطب جدید
                                         </p>
+
                                     </div>
                                 </div>
                                 <hr style={{backgroundColor: GREEN}}/>
                                 <div className="row mt-5">
-                                    <div className="col-md-4">
+                                    <div className="col-sm-8 col-md-8 col-lg-6">
                                         <form onSubmit={createContact}>
                                             <div className="mb-2">
                                                 <input
@@ -133,6 +124,20 @@ const AddContact = () => {
                                                 </Link>
                                             </div>
                                         </form>
+                                    </div>
+                                    <div className="col-sm-8 col-md-8 col-lg-6">
+                                        <img
+                                            src={require("../../assets/man-taking-note.png")}
+                                            height="40%"
+                                            style={{
+                                                display: "flex",
+                                                position: "absolute",
+                                                zIndex: "-1",
+                                                top: "130px",
+                                                left: "100px",
+                                                opacity: "50%",
+                                            }}
+                                        />
                                     </div>
                                 </div>
                             </div>

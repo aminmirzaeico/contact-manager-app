@@ -13,7 +13,7 @@ const Contacts = () => {
                 <div className="grid">
                     <div className="row">
                         <div className="col">
-                            <p className="h3 float-end">
+                            <p className="h3 float-md-end float-lg-end float-xl-end float-xxl-end">
                                 <Link to={"/contacts/add"} className="btn m-2" style={{backgroundColor: PINK}}>
                                     ساخت مخاطب جدید
                                     <i className="fas fa-user-plus mx-2"/>
@@ -35,14 +35,15 @@ const Contacts = () => {
                                             deleteContact={() => deleteContact(c.id, c.fullname)}
                                         />))
                                     : (
-                                        <div className="text-center py-5" style={{backgroundColor: CURRENTLINE}}>
+                                        <div className="text-center py-5">
                                             <p className="h3" style={{color: ORANGE}}>
                                                 مخاطب یافت نشد...
                                             </p>
                                             <img
                                                 src={require("../../assets/no-found.gif")}
                                                 alt="یافت نشد"
-                                                className="w-25"/>
+                                                className="m-2"
+                                                style={{width: "250px"}}/>
                                         </div>
                                     )
                             }

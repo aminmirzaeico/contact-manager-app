@@ -20,7 +20,8 @@ const Navbar = () => {
                     </div>
                     {
                         location.pathname === "/contacts" ? (
-                            <div className="col-md-6 col-lg-6 col-sm-12 d-flex justify-content-center">
+                            <div
+                                className="col-md-6 col-lg-6 col-sm-6 d-flex justify-content-center align-content-center">
                                 <SearchContact/>
                             </div>) : null
                     }
